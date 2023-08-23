@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <style>
+        body {
+            background-image: url('/static/images/background3.jpeg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: black;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .custom-file-input {
+            color: black;
+            padding: 25px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color: #3f51b5;
+            color: white;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Check if gesture is rock, paper or scissors</h1>
+    <form action="/classify" method="POST" enctype="multipart/form-data">
+        <label class="custom-file-input">
+            <input type="file" name="image" accept="image/*">
+        </label>
+        <input type="submit" value="Classify">
+    </form>
+</body>
+</html>

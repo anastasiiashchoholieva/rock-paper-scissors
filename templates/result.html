@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <style>
+        body {
+            background-image: url('/static/images/background3.jpeg'); /* Replace 'background.jpg' with your image file */
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: black;
+        }
+
+        .result {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .result-text {
+            font-size: 24px;
+            color: black;
+        }
+
+        .result-label {
+            font-size: 32px;
+            font-weight: bold;
+            color: #3f51b5;
+        }
+
+        .result-probability {
+            font-size: 24px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results are ready!</h1>
+    <div class="result">
+        <p class="result-text">The image is classified as:</p>
+        <p class="result-label">{{ predicted_class }}</p>
+        <p class="result-text">with a probability of:</p>
+        <p class="result-probability">{{ probability }}%</p>
+    </div>
+</body>
+</html>
+
