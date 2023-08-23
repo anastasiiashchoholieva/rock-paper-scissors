@@ -16,6 +16,13 @@ Users can upload images, and the application will provide a classification label
 - HTML/CSS for the user interface.
 
 
+## Deep learning model
+
+***
+
+- Dataset: https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors
+- Google Collab: https://colab.research.google.com/drive/1zu6ASHV_XU-qUHQk1EjL9X7Dg4YfraF-?usp=sharing
+
 ## Usage
 
 ***
