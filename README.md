@@ -28,9 +28,11 @@ Users can upload images, and the application will provide a classification label
 ***
 
 - Clone the repository: `git clone https://github.com/anastasiiashchoholieva/rock-paper-scissors.git`
-- Install the requirements: `pip install -r requirements.txt`
-- To run program: Open the `app.py` and run the `main` function. This will open a website where you can upload a picture of gesture(better of a right hand) and receive a result with which probability this might be: rock, paper or scissors.
-
+- Run with docker:
+```
+docker build -t <app_name> .
+docker run -p 5000:5000 <app_name>
+```
 ## How it looks
 
 ***
